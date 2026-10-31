@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>НПП «Стек» — банковское оборудование, сейфы и металлическая мебель из Саратова</title>
+  <meta name="description" content="Производим банковское оборудование, сейфы, металлические шкафы, картотеки, контейнеры и почтовое оборудование. 14+ лет, официальный поставщик Сбербанка. 42 модели, изготовление по проекту, доставка по России.">
+  <meta name="theme-color" content="#07060f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="НПП «Стек» — металл, которому доверяют банки">
+  <meta property="og:description" content="Банковское оборудование, сейфы, металлическая мебель и архивные системы собственного производства. 42 модели, изготовление по проекту.">
+  <meta property="og:image" content="assets/products/4/s2.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Reveal animations only when the app script is alive; otherwise content stays visible.
+    document.documentElement.classList.add('js');
+    window.setTimeout(function () {
+      if (!window.__STEK_READY) document.documentElement.classList.remove('js');
+    }, 2500);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "НПП «Стек»",
+    "url": "https://bostek.ru",
+    "description": "Производство банковского оборудования, металлической мебели, офисного и архивного оборудования.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Саратов",
+      "postalCode": "410009",
+      "addressCountry": "RU"
+    },
+    "telephone": "+7 (8452) 48-40-29",
+    "email": "office@bostek.ru"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Перейти к каталогу</a>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg__orb bg__orb--violet"></div>
+    <div class="bg__orb bg__orb--blue"></div>
+    <div class="bg__orb bg__orb--cyan"></div>
+    <div class="bg__orb bg__orb--pink"></div>
+    <div class="bg__orb bg__orb--mint"></div>
+    <div class="bg__grid"></div>
+    <div class="bg__noise"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <!-- SVG icon sprite -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.6 2.6L16.5 9"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3.5 4h2l2.2 10.5h10.8l2-7.5H6.2"/><circle cx="9" cy="19" r="1.6"/><circle cx="17.5" cy="19" r="1.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.8h3l1.4 4-2 1.4a13 13 0 0 0 6.2 6.2l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2C10.7 19.2 4.8 13.3 4.2 6A2 2 0 0 1 6.2 3.8Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4.5h6V7M7 7l1 13h8l1-13"/><path d="M10 11v5M14 11v5"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.5 5.3 4.2 9 9.5 9.5-5.3.5-9 4.2-9.5 9.5-.5-5.3-4.2-9-9.5-9.5 5.3-.5 9-4.2 9.5-9.5Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.8 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.7 7.5-9.5V6L12 3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V9l5 3V9l5 3V8l5 3v10H3Z"/><path d="M7 21v-4h3v4M15 21v-4h3v4M2 21h20"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m4 12 8 4.5 8-4.5M4 16l8 4.5 8-4.5"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.5a2 2 0 0 0 0-4H12a2 2 0 0 1 0-4h4.5A4.5 4.5 0 0 0 21 8.5C21 5.5 17 3 12 3Z"/><circle cx="7.5" cy="10" r="1"/><circle cx="10" cy="6.8" r="1"/><circle cx="15" cy="6.8" r="1"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 2.6 4 5.7 4 9s-1.2 6.4-4 9c-2.8-2.6-4-5.7-4-9s1.2-6.4 4-9Z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7.5 18-3.2-7.3L3 10.5 21 3Z"/><path d="m10.3 13.7 4.2-4.2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-safe" viewBox="0 0 24 24"><rect x="3.5" y="3" width="17" height="18" rx="2.2"/><circle cx="13.5" cy="12" r="3.2"/><path d="M13.5 8.8v1M16.7 12h-1M13.5 15.2v-1M10.3 12h1M7.5 7v10"/></symbol>
+    <symbol id="i-locker" viewBox="0 0 24 24"><rect x="3.5" y="2.5" width="17" height="19" rx="2"/><path d="M12 2.5v19M6.5 7h2M15.5 7h2M6.5 11h2M15.5 11h2M6.5 15h2M15.5 15h2"/></symbol>
+    <symbol id="i-module" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-cabinet" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M12 2.5v19M7 8h1.5M15.5 8H17M7 12h1.5M15.5 12H17M4 20.5h16"/></symbol>
+    <symbol id="i-cardfile" viewBox="0 0 24 24"><rect x="3.5" y="3" width="17" height="18" rx="2"/><path d="M3.5 8h17M3.5 13h17M3.5 18h17M9 6h6M9 11h6M9 16h6"/></symbol>
+    <symbol id="i-container" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="13" rx="1.8"/><path d="M3 9.5h18M7 13h2M7 16h2M12 13h2M12 16h2M17 13h.5M17 16h.5"/></symbol>
+    <symbol id="i-trolley" viewBox="0 0 24 24"><rect x="5.5" y="5.5" width="13" height="9" rx="1.5"/><path d="M5.5 5.5 4 3M12 14.5V18M8 21h8"/><circle cx="8.5" cy="19.5" r="1.4"/><circle cx="15.5" cy="19.5" r="1.4"/></symbol>
+    <symbol id="i-stand" viewBox="0 0 24 24"><rect x="4.5" y="2.5" width="15" height="11" rx="1.5"/><path d="M12 13.5V19M8 21h8M7 6h10M7 9h6"/></symbol>
+    <symbol id="i-thermal" viewBox="0 0 24 24"><rect x="4.5" y="3" width="15" height="18" rx="2"/><path d="M8 7h8M8 10h5M8 16h8"/><path d="M15.5 12.5v4a1.8 1.8 0 1 1-3.6 0v-4a1.8 1.8 0 0 1 3.6 0Z"/></symbol>
+    <symbol id="i-rack" viewBox="0 0 24 24"><path d="M4 3v18M20 3v18M4 7h16M4 12h16M4 17h16"/><path d="M7 7v5M17 12v5"/></symbol>
+    <symbol id="i-wardrobe" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M12 2.5v19M8 9l-2 3 2 3M16 9l2 3-2 3"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M9 6h6M9 9h6M9 12h3M9 18h6"/><circle cx="15.5" cy="12" r=".8"/><circle cx="15.5" cy="18" r=".8"/></symbol>
+    <symbol id="i-weapon" viewBox="0 0 24 24"><path d="m3 14 5-2 3 1.5L20 9v4l-7 3-2 4H7l1-4-5 2v-4Z"/><path d="m11 13 2 2"/></symbol>
+    <symbol id="i-retail" viewBox="0 0 24 24"><path d="M4 3v18M4 7h16M4 12h16M4 17h16"/><rect x="7" y="4" width="3" height="3" rx=".5"/><rect x="13" y="9" width="4" height="3" rx=".5"/><rect x="8" y="14" width="3" height="3" rx=".5"/></symbol>
+    <symbol id="i-mailbox" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4.5 6.5 7.5 6 7.5-6"/><path d="M3 9h18" opacity=".5"/></symbol>
+    <symbol id="i-tray" viewBox="0 0 24 24"><path d="M4 8.5h16l-1.5 4H5.5L4 8.5Z"/><path d="M4 13.5h16l-1.5 4H5.5l-1.5-4Z"/><path d="M5 18.5h14l-1 2H6l-1-2Z"/><path d="M8 5h8"/></symbol>
+    <symbol id="i-drawer" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M4 9h16M4 15h16M10 6h4M10 12h4M10 18h4"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8 6h8v5H8zM8 15h.5M12 15h.5M16 15h.5M8 18h.5M12 18h.5M16 18h.5"/></symbol>
+  </svg>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="1" y="1" width="46" height="46" rx="13" stroke="url(#logoGrad)" stroke-opacity=".65"/>
+            <path d="M32.5 15.5c-2-1.7-4.6-2.5-7.5-2.5-5.9 0-10.2 3.4-10.2 8.2 0 4.3 3 6.7 8.1 7.9 4 1 5.5 1.9 5.5 3.6 0 1.8-1.7 2.9-4.4 2.9-2.6 0-5-.9-7.2-2.8l-3.2 4.1c2.5 2.3 6 3.6 10 3.6 6.4 0 10.8-3.5 10.8-8.7 0-4.3-2.7-6.8-8.2-8.1-3.9-.9-5.4-1.8-5.4-3.3 0-1.6 1.6-2.6 4-2.6 2.2 0 4.2.7 6 2.1l2.7-4.4Z" fill="url(#logoGrad)"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B5CFF"/><stop offset=".45" stop-color="#22D3EE"/><stop offset=".78" stop-color="#3CF0C5"/><stop offset="1" stop-color="#FF4FD8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo__text">СТЕК<small>НПП · Саратов</small></span>
+        <span class="sr-only">— на главную</span>
+      </a>
+
+      <nav class="nav" id="desktopNav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#audience">Кому подходит</a>
+        <a href="#advantages">Производство</a>
+        <a href="#process">Как работаем</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+78452484029" aria-label="Позвонить: +7 (8452) 48-40-29">
+          <span class="header__phone-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+          <span>+7 (8452) 48-40-29<small>Позвонить</small></span>
+        </a>
+        <button class="btn btn--glass header__cart" id="cartOpen" type="button">
+          <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>
+          <span class="header__cart-label">Заявка</span>
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+          <span class="sr-only">— открыть список</span>
+        </button>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <span class="mobile-menu__label">Меню</span>
+      <button class="icon-btn" id="menuClose" type="button" aria-label="Закрыть меню">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+      <a href="#catalog"><span>01</span>Каталог</a>
+      <a href="#audience"><span>02</span>Кому подходит</a>
+      <a href="#advantages"><span>03</span>Производство</a>
+      <a href="#process"><span>04</span>Как работаем</a>
+      <a href="#faq"><span>05</span>Вопросы</a>
+      <a href="#contacts"><span>06</span>Контакты</a>
+    </nav>
+    <div class="mobile-menu__bottom">
+      <a class="btn btn--primary" href="#catalog">Смотреть каталог <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+78452484029">+7 (8452) 48-40-29</a>
+        <a href="mailto:office@bostek.ru">office@bostek.ru</a>
+      </div>
+      <p>Саратов · производство и поставки по России</p>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__spot" id="heroSpot" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="eyebrow reveal" style="--d:.05s">
+            <span class="eyebrow__pulse"></span>
+            Собственное производство · Саратов · 14+ лет
+          </div>
+
+          <h1 class="hero__title reveal" id="heroTitle" style="--d:.12s">
+            Металл,<br>
+            которому<br>
+            <span class="grad-text">доверяют</span><br>
+            банки
+          </h1>
+
+          <p class="hero__lead reveal" style="--d:.2s">
+            Банковское оборудование, сейфы, металлическая мебель и архивные системы.
+            Разрабатываем, производим и поставляем по всей России — от операционного зала до хранилища.
+          </p>
+
+          <div class="hero__actions reveal" style="--d:.28s">
+            <a class="btn btn--primary btn--glow" href="#catalog">
+              Смотреть 42 модели
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+            <button class="btn btn--glass" type="button" data-open-request>
+              Подобрать оборудование
+              <svg class="icon"><use href="#i-spark"/></svg>
+            </button>
+          </div>
+
+          <ul class="hero__trust reveal" style="--d:.36s">
+            <li><svg class="icon"><use href="#i-check"/></svg>12 лет — поставщик Сбербанка</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Порошковая окраска по RAL</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>Работаем по договору</li>
+          </ul>
+
+          <div class="hero__stats reveal" style="--d:.44s">
+            <div class="stat">
+              <strong class="stat__num"><span data-count="14">0</span><span>+</span></strong>
+              <span class="stat__label">лет производства</span>
+            </div>
+            <div class="stat">
+              <strong class="stat__num"><span data-count="42">0</span></strong>
+              <span class="stat__label">модели в каталоге</span>
+            </div>
+            <div class="stat">
+              <strong class="stat__num"><span data-count="18">0</span></strong>
+              <span class="stat__label">категорий оборудования</span>
+            </div>
+            <div class="stat">
+              <strong class="stat__num"><span data-count="12">0</span></strong>
+              <span class="stat__label">лет со Сбербанком</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" id="heroTilt" style="--d:.2s">
+          <div class="hero__orbit" aria-hidden="true"></div>
+          <div class="hero__orbit hero__orbit--2" aria-hidden="true"></div>
+
+          <div class="hero-card">
+            <div class="hero-card__shine" aria-hidden="true"></div>
+            <div class="hero-card__top">
+              <span><span class="dot"></span>Собственное производство</span>
+              <span class="hero-card__tag">1 класс</span>
+            </div>
+            <div class="hero-card__stage">
+              <div class="hero-card__halo" aria-hidden="true"></div>
+              <img src="assets/products/4/s2.jpg" alt="Взломостойкий сейф С-8/1 производства НПП Стек" width="393" height="400" fetchpriority="high">
+              <span class="hero-card__reflection" aria-hidden="true"></span>
+            </div>
+            <div class="hero-card__meta">
+              <div>
+                <span class="hero-card__kicker">Взломостойкий сейф</span>
+                <strong>С-8/1 · С-8/2</strong>
+              </div>
+              <span class="hero-card__price">Цена по запросу</span>
+            </div>
+            <div class="hero-card__bar" aria-hidden="true"><span></span></div>
+          </div>
+
+          <div class="float-chip float-chip--1">
+            <span class="float-chip__icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <span><strong>Сертификат</strong><small>соответствия</small></span>
+          </div>
+          <div class="float-chip float-chip--2">
+            <span class="float-chip__icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <span><strong>Вся Россия</strong><small>до Камчатки</small></span>
+          </div>
+          <div class="float-chip float-chip--3">
+            <span class="float-chip__num">12</span>
+            <span><strong>лет</strong><small>поставщик Сбербанка</small></span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#catalog" aria-label="Листать к каталогу">
+        <span class="scroll-cue__line"></span>
+        <span>Листайте</span>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Сейфы</span><i></i><span>Шкафы абонентские</span><i></i><span>Картотеки</span><i></i><span>Контейнеры для денег</span><i></i><span>Тележки</span><i></i><span>Термошкафы</span><i></i><span>Почтовые ящики</span><i></i><span>Стеллажи</span><i></i><span>Шкафы-купе</span><i></i><span>Стенды</span><i></i>
+        <span>Сейфы</span><i></i><span>Шкафы абонентские</span><i></i><span>Картотеки</span><i></i><span>Контейнеры для денег</span><i></i><span>Тележки</span><i></i><span>Термошкафы</span><i></i><span>Почтовые ящики</span><i></i><span>Стеллажи</span><i></i><span>Шкафы-купе</span><i></i><span>Стенды</span><i></i>
+      </div>
+    </div>
+
+    <section class="section catalog" id="catalog" aria-labelledby="catalogTitle">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>Каталог оборудования</div>
+            <h2 class="section-title reveal" id="catalogTitle" style="--d:.06s">
+              42 модели для банков,<br><span class="grad-text">почты и офисов</span>
+            </h2>
+            <p class="section-lead reveal" style="--d:.12s">
+              Серийные изделия и решения под проект. Выберите категорию или найдите модель по названию — по каждой позиции подготовим расчёт.
+            </p>
+          </div>
+          <div class="catalog__summary reveal" style="--d:.18s">
+            <span class="catalog__summary-num" id="totalModels">42</span>
+            <span>позиции<br>в каталоге</span>
+          </div>
+        </div>
+
+        <div class="catalog__toolbar reveal" style="--d:.16s">
+          <label class="search" for="catalogSearch">
+            <svg class="icon"><use href="#i-search"/></svg>
+            <input id="catalogSearch" type="search" placeholder="Найти: сейф, ША-7, картотека…" autocomplete="off" aria-label="Поиск по каталогу">
+            <button class="search__clear" id="searchClear" type="button" aria-label="Очистить поиск" hidden>
+              <svg class="icon"><use href="#i-close"/></svg>
+            </button>
+          </label>
+          <div class="select-wrap">
+            <select id="catalogSort" aria-label="Сортировка товаров">
+              <option value="popular">По порядку каталога</option>
+              <option value="name">По названию</option>
+              <option value="category">По категории</option>
+            </select>
+            <svg class="icon"><use href="#i-chevron"/></svg>
+          </div>
+          <button class="btn btn--ghost catalog__reset" id="catalogReset" type="button">
+            <svg class="icon"><use href="#i-close"/></svg>Сбросить
+          </button>
+        </div>
+
+        <div class="chips" id="categoryChips" role="group" aria-label="Категории товаров"></div>
+
+        <div class="catalog__bar">
+          <p id="catalogCount" aria-live="polite">Показано 12 из 42</p>
+          <span class="catalog__hint">Цена зависит от комплектации — подготовим расчёт</span>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="catalog__more-wrap" id="catalogMoreWrap">
+          <button class="btn btn--glass btn--wide" id="catalogMore" type="button">
+            Показать ещё <span id="catalogMoreCount">12</span>
+            <svg class="icon"><use href="#i-plus"/></svg>
+          </button>
+        </div>
+
+        <div class="catalog__empty" id="catalogEmpty" hidden>
+          <span class="catalog__empty-icon"><svg class="icon"><use href="#i-search"/></svg></span>
+          <h3>Ничего не нашлось</h3>
+          <p>Попробуйте другое название или сбросьте фильтры — в каталоге 42 позиции.</p>
+          <button class="btn btn--primary" type="button" data-reset-all>Показать все товары</button>
+        </div>
+
+        <div class="catalog__promo reveal">
+          <div class="catalog__promo-copy">
+            <span class="catalog__promo-kicker">Нестандартная задача?</span>
+            <h3>Спроектируем оборудование под ваш объект</h3>
+            <p>Изменим габариты, количество ячеек, замки и цвет покрытия. Подготовим решение под планировку и сценарии работы.</p>
+          </div>
+          <button class="btn btn--primary" type="button" data-open-request>
+            Обсудить проект
+            <svg class="icon"><use href="#i-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section audience" id="audience" aria-labelledby="audienceTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>Кому подходит</div>
+          <h2 class="section-title reveal" id="audienceTitle" style="--d:.06s">
+            Оборудование для тех,<br>кто работает <span class="grad-text">с людьми и ценностями</span>
+          </h2>
+          <p class="section-lead reveal" style="--d:.12s">
+            Понимаем логику операционного зала, хранилища и архива. Подбираем не отдельный шкаф, а работающую систему хранения.
+          </p>
+        </div>
+
+        <div class="audience__grid">
+          <article class="audience-card audience-card--violet reveal tilt" data-tilt>
+            <div class="audience-card__glow" aria-hidden="true"></div>
+            <div class="audience-card__top">
+              <span class="audience-card__icon"><svg class="icon"><use href="#i-safe"/></svg></span>
+              <span class="audience-card__num">01</span>
+            </div>
+            <h3>Банки</h3>
+            <p>Кассовые узлы, операционные залы, хранилища и архивы. Сейфы, абонентские шкафы, контейнеры и тележки для денежных масс.</p>
+            <div class="audience-card__links">
+              <button type="button" data-filter="sejfy">Сейфы</button>
+              <button type="button" data-filter="abonentskie">Абонентские шкафы</button>
+              <button type="button" data-filter="konteynery">Контейнеры</button>
+              <button type="button" data-filter="kartoteki">Картотеки</button>
+            </div>
+            <span class="audience-card__line" aria-hidden="true"></span>
+          </article>
+
+          <article class="audience-card audience-card--cyan reveal tilt" data-tilt>
+            <div class="audience-card__glow" aria-hidden="true"></div>
+            <div class="audience-card__top">
+              <span class="audience-card__icon"><svg class="icon"><use href="#i-mailbox"/></svg></span>
+              <span class="audience-card__num">02</span>
+            </div>
+            <h3>Почта и связь</h3>
+            <p>Абонентские шкафы, почтовые ящики, информационные стенды и стойки для отделений и клиентских зон.</p>
+            <div class="audience-card__links">
+              <button type="button" data-filter="abonentskie">Абонентские шкафы</button>
+              <button type="button" data-filter="yashchiki">Почтовые ящики</button>
+              <button type="button" data-filter="stendy">Стенды</button>
+              <button type="button" data-filter="stoyki">Стойки</button>
+            </div>
+            <span class="audience-card__line" aria-hidden="true"></span>
+          </article>
+
+          <article class="audience-card audience-card--mint reveal tilt" data-tilt>
+            <div class="audience-card__glow" aria-hidden="true"></div>
+            <div class="audience-card__top">
+              <span class="audience-card__icon"><svg class="icon"><use href="#i-cardfile"/></svg></span>
+              <span class="audience-card__num">03</span>
+            </div>
+            <h3>Архивы и офисы</h3>
+            <p>Шкафы, картотеки, стеллажи и шкафы-купе для документов, папок и всего, что должно храниться годами.</p>
+            <div class="audience-card__links">
+              <button type="button" data-filter="metallicheskie">Металлические шкафы</button>
+              <button type="button" data-filter="kartoteki">Картотеки</button>
+              <button type="button" data-filter="stellazhi">Стеллажи</button>
+              <button type="button" data-filter="kupe">Шкафы-купе</button>
+            </div>
+            <span class="audience-card__line" aria-hidden="true"></span>
+          </article>
+
+          <article class="audience-card audience-card--pink reveal tilt" data-tilt>
+            <div class="audience-card__glow" aria-hidden="true"></div>
+            <div class="audience-card__top">
+              <span class="audience-card__icon"><svg class="icon"><use href="#i-retail"/></svg></span>
+              <span class="audience-card__num">04</span>
+            </div>
+            <h3>Ритейл и сервис</h3>
+            <p>Торговые стойки, стенды, тумбы и модули для витрин, образцов и рабочих мест сотрудников.</p>
+            <div class="audience-card__links">
+              <button type="button" data-filter="stoyki">Торговые стойки</button>
+              <button type="button" data-filter="stendy">Стенды</button>
+              <button type="button" data-filter="tumby">Тумбы</button>
+              <button type="button" data-filter="moduli">Шкафы-модули</button>
+            </div>
+            <span class="audience-card__line" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantages" id="advantages" aria-labelledby="advantagesTitle">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>Почему «Стек»</div>
+            <h2 class="section-title reveal" id="advantagesTitle" style="--d:.06s">
+              Не перепродажа.<br><span class="grad-text">Собственное производство.</span>
+            </h2>
+          </div>
+          <p class="section-lead section-lead--right reveal" style="--d:.12s">
+            От листа металла до готового изделия — внутри одного предприятия. Поэтому мы отвечаем за сроки, качество и возможность изменить конструкцию под задачу.
+          </p>
+        </div>
+
+        <div class="bento">
+          <article class="bento-card bento-card--hero reveal tilt" data-tilt>
+            <div class="bento-card__glow" aria-hidden="true"></div>
+            <div class="bento-card__big">12</div>
+            <div class="bento-card__content">
+              <span class="bento-card__kicker">Официальный поставщик</span>
+              <h3>12 лет — поставщик Сберегательного банка России</h3>
+              <p>Наши изделия работают в региональных банках, почтовых отделениях и учреждениях по всей стране — от европейской части до Дальнего Востока и Камчатки.</p>
+            </div>
+            <span class="bento-card__badge"><svg class="icon"><use href="#i-shield"/></svg>Проверено практикой</span>
+          </article>
+
+          <article class="bento-card bento-card--wide reveal tilt" data-tilt>
+            <div class="bento-card__glow" aria-hidden="true"></div>
+            <span class="bento-card__icon"><svg class="icon"><use href="#i-factory"/></svg></span>
+            <h3>Полный цикл на одной площадке</h3>
+            <p>Металлообработка, корпусные работы, сборка и порошковая окраска. Работаем с нержавеющей сталью, алюминиевыми сплавами и титаном.</p>
+            <div class="bento-card__tags">
+              <span>Металлообработка</span><span>Корпусные работы</span><span>Порошковая окраска</span><span>Нержавеющая сталь</span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--small reveal">
+            <span class="bento-card__icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h3>Индивидуальные проекты</h3>
+            <p>Меняем габариты, количество ячеек, замки и комплектацию под конкретный объект.</p>
+          </article>
+
+          <article class="bento-card bento-card--small reveal">
+            <span class="bento-card__icon"><svg class="icon"><use href="#i-palette"/></svg></span>
+            <h3>Окраска по RAL</h3>
+            <p>Полимерное порошковое покрытие в любой цвет каталога — под фирменный стиль.</p>
+          </article>
+
+          <article class="bento-card bento-card--small reveal">
+            <span class="bento-card__icon"><svg class="icon"><use href="#i-doc"/></svg></span>
+            <h3>Документы и сертификаты</h3>
+            <p>Сертификат соответствия на сейфы. Работаем с юридическими лицами по договору.</p>
+          </article>
+
+          <article class="bento-card bento-card--small reveal">
+            <span class="bento-card__icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h3>География поставок</h3>
+            <p>Отгружаем по России. Условия доставки и упаковку согласовываем под изделие.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container about__grid">
+        <div class="about__content">
+          <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>О предприятии</div>
+          <h2 class="section-title reveal" id="aboutTitle" style="--d:.06s">
+            Саратовская школа<br><span class="grad-text">металла и точности</span>
+          </h2>
+          <div class="about__text reveal" style="--d:.12s">
+            <p><strong>Научно-производственное предприятие «Стек»</strong> более 14 лет разрабатывает, производит и поставляет банковское оборудование, металлическую мебель, офисные и архивные системы.</p>
+            <p>Гибкость производства позволяет выпускать как серийные изделия, так и индивидуальные заказы: от обработки металлического листа и каркасных работ до порошковой окраски и сборки.</p>
+            <p>Наши изделия можно увидеть во многих региональных банках, почтовых отделениях и учреждениях по всей России — от европейской части до Дальнего Востока и Камчатки.</p>
+          </div>
+
+          <div class="about__stats reveal" style="--d:.18s">
+            <div><strong>14+</strong><span>лет на рынке</span></div>
+            <div><strong>12</strong><span>лет со Сбербанком</span></div>
+            <div><strong>42</strong><span>модели</span></div>
+            <div><strong>18</strong><span>категорий</span></div>
+          </div>
+
+          <div class="about__capabilities reveal" style="--d:.24s">
+            <span>Металлообработка</span>
+            <span>Корпусные изделия</span>
+            <span>Порошковая окраска</span>
+            <span>Нержавеющая сталь</span>
+            <span>Алюминий</span>
+            <span>Титан</span>
+          </div>
+        </div>
+
+        <div class="about__visual reveal" style="--d:.16s">
+          <div class="about__frame">
+            <div class="about__frame-top">
+              <span><span class="dot"></span>Документ</span>
+              <span>Сертификат</span>
+            </div>
+            <a class="about__certificate" href="assets/sertif-640.jpg" target="_blank" rel="noopener">
+              <img src="assets/sertif-640.jpg" alt="Сертификат соответствия на сейф производства НПП Стек" width="640" height="898" loading="lazy">
+              <span class="about__certificate-hover">
+                <svg class="icon"><use href="#i-arrow-up"/></svg>
+                Открыть документ
+              </span>
+            </a>
+            <div class="about__frame-bottom">
+              <span>Сертификат соответствия</span>
+              <span class="about__frame-badge">RU</span>
+            </div>
+          </div>
+          <div class="about__float">
+            <svg class="icon"><use href="#i-shield"/></svg>
+            <div><strong>Сейфы</strong><span>сертифицированы</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="process" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>Как работаем</div>
+          <h2 class="section-title reveal" id="processTitle" style="--d:.06s">
+            От задачи до отгрузки —<br><span class="grad-text">понятный маршрут</span>
+          </h2>
+          <p class="section-lead reveal" style="--d:.12s">
+            Не продаём «коробку из наличия». Сначала разбираемся, как будет использоваться изделие, затем предлагаем решение и фиксируем условия.
+          </p>
+        </div>
+
+        <div class="process__track">
+          <div class="process__line" aria-hidden="true"><span></span></div>
+          <article class="process-step reveal">
+            <span class="process-step__num">01</span>
+            <span class="process-step__icon"><svg class="icon"><use href="#i-doc"/></svg></span>
+            <h3>Задача</h3>
+            <p>Изучаем объект: помещение, сценарии, объём хранения и требования к доступу.</p>
+          </article>
+          <article class="process-step reveal" style="--d:.06s">
+            <span class="process-step__num">02</span>
+            <span class="process-step__icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h3>Решение</h3>
+            <p>Подбираем серийные модели или проектируем конструкцию под ваши размеры.</p>
+          </article>
+          <article class="process-step reveal" style="--d:.12s">
+            <span class="process-step__num">03</span>
+            <span class="process-step__icon"><svg class="icon"><use href="#i-factory"/></svg></span>
+            <h3>Производство</h3>
+            <p>Металлообработка, корпусные работы, сборка и комплектация на своей площадке.</p>
+          </article>
+          <article class="process-step reveal" style="--d:.18s">
+            <span class="process-step__num">04</span>
+            <span class="process-step__icon"><svg class="icon"><use href="#i-palette"/></svg></span>
+            <h3>Покрытие</h3>
+            <p>Порошковая окраска по RAL и контроль качества перед упаковкой.</p>
+          </article>
+          <article class="process-step reveal" style="--d:.24s">
+            <span class="process-step__num">05</span>
+            <span class="process-step__icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h3>Отгрузка</h3>
+            <p>Упаковываем и организуем доставку по России. Условия согласовываем заранее.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section geo" aria-labelledby="geoTitle">
+      <div class="container">
+        <div class="geo__panel reveal">
+          <div class="geo__glow" aria-hidden="true"></div>
+          <div class="geo__copy">
+            <div class="eyebrow"><span class="eyebrow__pulse"></span>География</div>
+            <h2 class="section-title" id="geoTitle">От Саратова<br><span class="grad-text">до Камчатки</span></h2>
+            <p>Наши изделия работают в региональных банках, почтовых отделениях и учреждениях по всей России.</p>
+            <button class="btn btn--glass" type="button" data-open-request>
+              Обсудить поставку
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+          <div class="geo__route" aria-hidden="true">
+            <div class="geo__route-line"><span class="geo__dot"></span></div>
+            <ul>
+              <li><span>01</span>Европейская часть</li>
+              <li><span>02</span>Урал</li>
+              <li><span>03</span>Сибирь</li>
+              <li><span>04</span>Дальний Восток</li>
+              <li><span>05</span>Камчатка</li>
+            </ul>
+          </div>
+          <div class="geo__facts">
+            <div><strong>−50…+60 °C</strong><span>рабочий диапазон термошкафов</span></div>
+            <div><strong>6 мм</strong><span>металл лицевого слоя сейфа</span></div>
+            <div><strong>RAL</strong><span>любой цвет порошковой окраски</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq__grid">
+        <div class="faq__intro">
+          <div class="eyebrow reveal"><span class="eyebrow__pulse"></span>Вопросы и ответы</div>
+          <h2 class="section-title reveal" id="faqTitle" style="--d:.06s">
+            Коротко<br><span class="grad-text">о важном</span>
+          </h2>
+          <p class="section-lead reveal" style="--d:.12s">
+            Если не нашли ответ — позвоните или оставьте заявку. Уточним задачу и предложим решение.
+          </p>
+          <div class="faq__contact reveal" style="--d:.18s">
+            <a href="tel:+78452484029"><svg class="icon"><use href="#i-phone"/></svg>+7 (8452) 48-40-29</a>
+            <a href="mailto:office@bostek.ru"><svg class="icon"><use href="#i-mail"/></svg>office@bostek.ru</a>
+          </div>
+        </div>
+
+        <div class="faq__list">
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Вы действительно производите, а не перепродаёте?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>Да. Производство находится в Саратове: металлообработка, корпусные работы, сборка и порошковая окраска. Поэтому мы можем менять конструкцию и комплектацию под задачу, а не выбирать только из готового списка.</p></div></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Можно заказать нестандартные размеры?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>Да. По согласованию с заказчиком изготавливаем термошкафы, стенды, корпуса и другие изделия нестандартных размеров, меняем количество ячеек, дверей и замков.</p></div></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Как формируется цена?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>Стоимость зависит от модели, габаритов, комплектации, типа замков, покрытия и количества. Оставьте заявку — менеджер уточнит параметры и подготовит расчёт.</p></div></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Работаете с юридическими лицами?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>Да. Работаем по договору, выставляем счёт, принимаем безналичную оплату. Подготовим коммерческое предложение под вашу задачу и объём.</p></div></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Есть ли сертификаты на продукцию?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>На сейфы есть сертификат соответствия — предоставим по запросу. По остальным позициям подготовим документы, которые нужны вашей закупке.</p></div></div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-item__q" type="button" aria-expanded="false">
+              <span>Как организована доставка?</span>
+              <span class="faq-item__icon"><svg class="icon"><use href="#i-plus"/></svg></span>
+            </button>
+            <div class="faq-item__a"><div><p>Отгружаем по России. Способ доставки, упаковку и стоимость согласовываем с учётом габаритов и региона. Условия фиксируем до начала производства.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts" aria-labelledby="contactsTitle">
+      <div class="container">
+        <div class="contacts__panel reveal">
+          <div class="contacts__glow contacts__glow--1" aria-hidden="true"></div>
+          <div class="contacts__glow contacts__glow--2" aria-hidden="true"></div>
+
+          <div class="contacts__copy">
+            <div class="eyebrow"><span class="eyebrow__pulse"></span>Свяжитесь с нами</div>
+            <h2 class="section-title" id="contactsTitle">Обсудим<br><span class="grad-text">ваш проект?</span></h2>
+            <p class="contacts__lead">Расскажите, что нужно разместить, хранить или перевозить. Подберём модели, предложим нестандартное решение и подготовим расчёт.</p>
+
+            <div class="contacts__cards">
+              <a class="contacts__card" href="tel:+78452484029">
+                <span class="contacts__card-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+                <span><small>Телефон</small><strong>+7 (8452) 48-40-29</strong><em>+7 (8452) 63-35-22</em></span>
+                <svg class="icon contacts__card-arrow"><use href="#i-arrow-up"/></svg>
+              </a>
+              <a class="contacts__card" href="mailto:office@bostek.ru">
+                <span class="contacts__card-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+                <span><small>E-mail</small><strong>office@bostek.ru</strong><em>bostek@mail.ru</em></span>
+                <svg class="icon contacts__card-arrow"><use href="#i-arrow-up"/></svg>
+              </a>
+              <a class="contacts__card" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2050%20%D0%BB%D0%B5%D1%82%20%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%2C%20101" target="_blank" rel="noopener">
+                <span class="contacts__card-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+                <span><small>Склад</small><strong>Саратов, пр-т 50 лет Октября, 101</strong><em>Почтовый адрес: 410009, а/я 2894</em></span>
+                <svg class="icon contacts__card-arrow"><use href="#i-arrow-up"/></svg>
+              </a>
+            </div>
+
+            <div class="contacts__note">
+              <span class="dot"></span>
+              Работаем с банками, почтовыми отделениями, офисами и архивами по всей России
+            </div>
+          </div>
+
+          <div class="contacts__form-wrap">
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__head">
+                <span class="form__kicker">Заявка на расчёт</span>
+                <span class="form__time"><span class="dot"></span>Ответим в рабочее время</span>
+              </div>
+              <h3>Получите предложение<br>под вашу задачу</h3>
+
+              <div class="form__row">
+                <label class="field">
+                  <span>Как к вам обращаться <b>*</b></span>
+                  <input type="text" name="name" placeholder="Имя" autocomplete="name" required>
+                </label>
+                <label class="field">
+                  <span>Телефон <b>*</b></span>
+                  <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="field">
+                  <span>Компания</span>
+                  <input type="text" name="company" placeholder="Название организации" autocomplete="organization">
+                </label>
+                <label class="field">
+                  <span>E-mail</span>
+                  <input type="email" name="email" placeholder="name@company.ru" autocomplete="email">
+                </label>
+              </div>
+              <label class="field">
+                <span>Что нужно подобрать?</span>
+                <textarea name="comment" rows="3" placeholder="Например: 2 сейфа и абонентский шкаф на 41 ячейку для отделения"></textarea>
+              </label>
+
+              <div class="form__error" id="contactError" role="alert" hidden></div>
+
+              <button class="btn btn--primary btn--glow btn--wide" type="submit">
+                Отправить заявку
+                <svg class="icon"><use href="#i-send"/></svg>
+              </button>
+
+              <p class="form__note">
+                Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a>.
+                Информация на сайте не является публичной офертой.
+              </p>
+
+              <div class="form__success" id="contactSuccess" hidden>
+                <span class="form__success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></span>
+                <h4>Заявка сформирована</h4>
+                <p>Мы открыли ваш почтовый клиент с готовым письмом. Если он не открылся — напишите на <a href="mailto:office@bostek.ru">office@bostek.ru</a> или позвоните нам.</p>
+                <button class="btn btn--glass" type="button" data-reset-contact>Отправить ещё одну</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo" href="#top">
+            <span class="logo__mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="1" y="1" width="46" height="46" rx="13" stroke="url(#logoGrad2)" stroke-opacity=".65"/>
+                <path d="M32.5 15.5c-2-1.7-4.6-2.5-7.5-2.5-5.9 0-10.2 3.4-10.2 8.2 0 4.3 3 6.7 8.1 7.9 4 1 5.5 1.9 5.5 3.6 0 1.8-1.7 2.9-4.4 2.9-2.6 0-5-.9-7.2-2.8l-3.2 4.1c2.5 2.3 6 3.6 10 3.6 6.4 0 10.8-3.5 10.8-8.7 0-4.3-2.7-6.8-8.2-8.1-3.9-.9-5.4-1.8-5.4-3.3 0-1.6 1.6-2.6 4-2.6 2.2 0 4.2.7 6 2.1l2.7-4.4Z" fill="url(#logoGrad2)"/>
+                <defs>
+                  <linearGradient id="logoGrad2" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8B5CFF"/><stop offset=".45" stop-color="#22D3EE"/><stop offset=".78" stop-color="#3CF0C5"/><stop offset="1" stop-color="#FF4FD8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="logo__text">СТЕК<small>НПП · Саратов</small></span>
+            <span class="sr-only">— на главную</span>
+          </a>
+          <p>Банковское оборудование, металлическая мебель, офисные и архивные системы собственного производства. 14+ лет, поставки по России.</p>
+          <div class="footer__social">
+            <a href="tel:+78452484029" aria-label="Позвонить"><svg class="icon"><use href="#i-phone"/></svg></a>
+            <a href="mailto:office@bostek.ru" aria-label="Написать"><svg class="icon"><use href="#i-mail"/></svg></a>
+            <button type="button" data-open-request aria-label="Оставить заявку"><svg class="icon"><use href="#i-send"/></svg></button>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Каталог</h4>
+          <a href="#catalog" data-filter="sejfy">Сейфы</a>
+          <a href="#catalog" data-filter="abonentskie">Шкафы абонентские</a>
+          <a href="#catalog" data-filter="kartoteki">Картотеки</a>
+          <a href="#catalog" data-filter="konteynery">Контейнеры для денег</a>
+          <a href="#catalog" data-filter="termoshkafy">Термошкафы</a>
+          <a href="#catalog">Все 42 модели</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Предприятие</h4>
+          <a href="#about">О производстве</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#process">Как работаем</a>
+          <a href="#faq">Вопросы и ответы</a>
+          <a href="privacy.html">Политика конфиденциальности</a>
+        </div>
+
+        <div class="footer__col footer__col--contacts">
+          <h4>Контакты</h4>
+          <a href="tel:+78452484029">+7 (8452) 48-40-29</a>
+          <a href="tel:+78452633522">+7 (8452) 63-35-22</a>
+          <a href="mailto:office@bostek.ru">office@bostek.ru</a>
+          <span>410009, г. Саратов, а/я 2894</span>
+          <span>Склад: пр-т 50 лет Октября, 101</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 НПП «Стек». Банковское оборудование, г. Саратов.</span>
+        <span>Информация на сайте не является публичной офертой.</span>
+        <a class="footer__up" href="#top" aria-label="Наверх"><svg class="icon"><use href="#i-arrow-up"/></svg>Наверх</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product modal -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-product></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="modal__close" type="button" data-close-product aria-label="Закрыть карточку товара">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+      <div class="modal__grid">
+        <div class="modal__visual">
+          <div class="modal__stage" id="modalStage"></div>
+          <div class="modal__visual-meta">
+            <span><span class="dot"></span>Собственное производство</span>
+            <span>НПП «Стек»</span>
+          </div>
+        </div>
+        <div class="modal__content">
+          <div class="modal__eyebrow" id="modalCategory"></div>
+          <h2 class="modal__title" id="modalTitle"></h2>
+          <div class="modal__tags" id="modalTags"></div>
+          <div class="modal__desc" id="modalDesc"></div>
+          <div class="modal__chips" id="modalChips"></div>
+          <div class="modal__specs-head">
+            <h3>Технические характеристики</h3>
+            <span id="modalSpecCount"></span>
+          </div>
+          <div class="modal__specs" id="modalSpecs"></div>
+          <div class="modal__actions">
+            <button class="btn btn--primary btn--glow" type="button" id="modalAdd">
+              <svg class="icon"><use href="#i-cart"/></svg>
+              Добавить в заявку
+            </button>
+            <a class="btn btn--glass" href="tel:+78452484029">
+              <svg class="icon"><use href="#i-phone"/></svg>
+              Позвонить
+            </a>
+          </div>
+          <p class="modal__note">Цена зависит от комплектации и количества. Подготовим расчёт после уточнения задачи.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Request drawer -->
+  <div class="drawer" id="requestDrawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-close-request></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" tabindex="-1">
+      <header class="drawer__head">
+        <div>
+          <span class="drawer__kicker">Заявка на расчёт</span>
+          <h2 id="drawerTitle">Ваш список</h2>
+        </div>
+        <button class="icon-btn" type="button" data-close-request aria-label="Закрыть заявку">
+          <svg class="icon"><use href="#i-close"/></svg>
+        </button>
+      </header>
+
+      <div class="drawer__body">
+        <div class="drawer__items" id="drawerItems"></div>
+        <div class="drawer__empty" id="drawerEmpty" hidden>
+          <span class="drawer__empty-icon"><svg class="icon"><use href="#i-cart"/></svg></span>
+          <h3>Пока пусто</h3>
+          <p>Добавьте модели из каталога или просто оставьте заявку — подберём оборудование под задачу.</p>
+          <button class="btn btn--glass" type="button" data-close-request>Перейти в каталог</button>
+        </div>
+
+        <form class="form form--drawer" id="requestForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span>Имя <b>*</b></span>
+              <input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Телефон <b>*</b></span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <span>Компания</span>
+              <input type="text" name="company" placeholder="Организация" autocomplete="organization">
+            </label>
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="name@company.ru" autocomplete="email">
+            </label>
+          </div>
+          <label class="field">
+            <span>Комментарий</span>
+            <textarea name="comment" rows="3" placeholder="Количество, размеры, сроки или другие пожелания"></textarea>
+          </label>
+          <div class="form__error" id="requestError" role="alert" hidden></div>
+          <button class="btn btn--primary btn--glow btn--wide" type="submit">
+            Отправить заявку
+            <svg class="icon"><use href="#i-send"/></svg>
+          </button>
+          <p class="form__note">Откроется почтовый клиент с готовым письмом на office@bostek.ru. Если он не открылся — позвоните нам.</p>
+          <div class="form__success" id="requestSuccess" hidden>
+            <span class="form__success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></span>
+            <h4>Заявка сформирована</h4>
+            <p>Проверьте письмо в почтовом клиенте и отправьте его. Или скопируйте заявку и пришлите удобным способом.</p>
+            <div class="form__success-actions">
+              <button class="btn btn--glass" type="button" id="copyRequest">
+                <svg class="icon"><use href="#i-copy"/></svg>Скопировать
+              </button>
+              <button class="btn btn--glass" type="button" id="openMailAgain">
+                <svg class="icon"><use href="#i-mail"/></svg>Открыть письмо
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast__icon"><svg class="icon"><use href="#i-check"/></svg></span>
+    <span class="toast__text" id="toastText">Готово</span>
+    <button class="toast__action" type="button" id="toastAction" hidden>Открыть</button>
+  </div>
+
+  <div class="mobile-bar" id="mobileBar">
+    <a class="mobile-bar__catalog" href="#catalog"><svg class="icon"><use href="#i-menu"/></svg>Каталог</a>
+    <button class="mobile-bar__cta" type="button" data-open-request>
+      <span>Оставить заявку</span>
+      <span class="cart-count" id="mobileCartCount">0</span>
+    </button>
+  </div>
+
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
